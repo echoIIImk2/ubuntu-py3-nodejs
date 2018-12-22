@@ -28,8 +28,8 @@ ENV LC_ALL en_US.UTF-8
 ADD template/descramble.js /root/template/descramble.js
 ADD template/downpics.js /root/template/downpics.js
 ADD template/YahooBook_dl.py /root/template/YahooBook_dl.py
-mkdir /root/template/tmp
-mkdir /root/template/data
+RUN mkdir /root/template/tmp
+RUN mkdir /root/template/data
 
 # Define default command.
 CMD ["bash"]
